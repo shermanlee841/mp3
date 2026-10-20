@@ -55,7 +55,7 @@ const NavLink = styled(Link)`
 
 export default function Navigation() {
     return (
-        <Navigation>
+        <StyledNav>
             <NavList>
                 <NavItem>
                     <NavLink to="/">Home</NavLink>
@@ -76,6 +76,6 @@ export default function Navigation() {
                     <NavLink to="/interests">Interests</NavLink>
                 </NavItem>
             </NavList>
-        </Navigation>
+        </StyledNav>
     );
 }

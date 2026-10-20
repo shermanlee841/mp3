@@ -6,8 +6,8 @@ export default function useCalculator() {
     const [output, setOutput] = useState<number | string>("");
 
     function getNumber() {
-        const first = Number(firstNumber);
-        const second = Number(secondNumber);
+        const first = parseFloat(firstNumber);
+        const second = parseFloat(secondNumber);
         return [first, second];
     }
 

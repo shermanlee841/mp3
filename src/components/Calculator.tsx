@@ -1,22 +1,30 @@
 import styled from "styled-components";
 import useCalculator from "../hooks/useCalculator";
 
-const CalculatorContainer = styled.div`
-    margin:-top: 4vh;
+const CalculatorContainer = styled.section`
+    margin-bottom: 4vh;
+    padding: 2vh 2vw;
+    background-color: #eef3f7;
 `;
 
-const CalculatorInput = styled.input`
-    margin: 1vh 0.5 vw;
-    padding: 1vh;
+const CalculatorTitle = styled.h3`
+    margin-bottom: 2vh;
+`;
+
+const Input = styled.input`
+    padding: 1vh 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
 `;
 
 const CalculatorButton = styled.button`
-    margin: 0.5vh 0.5vw;
-    padding: 1vh 1vw;
+    padding: 1vh 1.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 1vh;
 `;
 
-const Result = styled.p`
-    font-weight: bold;
+const Output = styled.div`
+    margin-top: 2vh;
 `;
 
 export default function Calculator() {
@@ -24,6 +32,8 @@ export default function Calculator() {
         firstNumber,
         secondNumber,
         output,
+        setFirstNumber,
+        setSecondNumber,
         addition,
         subtraction,
         multiplication,
@@ -32,4 +42,53 @@ export default function Calculator() {
         clearCalculator
     } = useCalculator();
 
-    const firstNumber =
+    return (
+        <CalculatorContainer>
+            <CalculatorTitle>Calculator</CalculatorTitle>
+
+            <Input
+                type="number"
+                value={firstNumber}
+                onChange={(event) => setFirstNumber(event.target.value)}
+                placeholder="First number"
+            />
+
+            <Input
+                type="number"
+                value={secondNumber}
+                onChange={(event) => setSecondNumber(event.target.value)}
+                placeholder="Second number"
+            />
+
+            <div>
+                <CalculatorButton onClick={addition}>
+                    +
+                </CalculatorButton>
+
+                <CalculatorButton onClick={subtraction}>
+                    -
+                </CalculatorButton>
+
+                <CalculatorButton onClick={multiplication}>
+                    *
+                </CalculatorButton>
+
+                <CalculatorButton onClick={division}>
+                    /
+                </CalculatorButton>
+
+                <CalculatorButton onClick={power}>
+                    **
+                </CalculatorButton>
+
+                <CalculatorButton onClick={clearCalculator}>
+                    Clear
+                </CalculatorButton>
+            </div>
+
+            <Output>
+                <p>{output}</p>
+            </Output>
+        </CalculatorContainer>
+    );
+}
