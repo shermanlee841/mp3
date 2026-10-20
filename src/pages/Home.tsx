@@ -16,12 +16,14 @@ export default function Home() {
             />
 
             <p>
-                I am a Computer Science and Biology undergraduate at
-                Boston University.
+                I am an undergraduate student at Boston University pursuing a Bachelor of Arts in Computer Science, as well as Biology.
+                I have an expected graduation date of May 2028. Post Graduation, I hope to pursue a job in bioinformatics or some role with data.
+                I decided to pursue biotechnology because of my love for the environment and nature.
             </p>
             <p>
-                I am interested in software development, technology,
-                and problem solving.
+                My experience combines skills in languages I've picked up from my curriculum at Boston University, as well as data analysis and marketing from Internships.
+                I have worked with Python, java, Assembly, SQL, and developer tools.
+                I am currently looking to expand my proficiency in CS by obtaining an internship.
             </p>
             <p>
                 <a
