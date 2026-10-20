@@ -8,8 +8,6 @@ const Page = styled.div`
 export default function Projects() {
     return (
         <Page>
-            <h2>Projects</h2>
-
             <section>
                 <h2>Snake</h2>
                 <p>

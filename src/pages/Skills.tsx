@@ -7,8 +7,6 @@ const Page = styled.div`
 export default function Skills() {
     return (
         <Page>
-            <h2>Skills</h2>
-
             <h3>Programming</h3>
             <p>Python, Java, C, Assembly, SQL</p>
 

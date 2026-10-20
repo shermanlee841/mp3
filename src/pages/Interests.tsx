@@ -7,8 +7,6 @@ const Page = styled.div`
 export default function Interests() {
     return (
         <Page>
-            <h2>Interests</h2>
-
             <ul>
                 <li>Swimming, I competed competitively for 10 years.</li>
                 <li>Triathalon, currently part of BU's Triathalon Team, as well as training for an IronMan.</li>

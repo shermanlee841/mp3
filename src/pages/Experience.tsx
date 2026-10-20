@@ -7,8 +7,6 @@ const Page = styled.div`
 export default function Experience() {
     return (
         <Page>
-            <h2>Experience</h2>
-
             <section>
                 <h2>Global Career Accelerator | SQL and Python</h2>
                 <p><strong>May 2026 - July 2026</strong></p>
