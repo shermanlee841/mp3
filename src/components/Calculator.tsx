@@ -47,41 +47,41 @@ export default function Calculator() {
             <CalculatorTitle>Calculator</CalculatorTitle>
 
             <Input
-                type="number"
-                value={firstNumber}
-                onChange={(event) => setFirstNumber(event.target.value)}
-                placeholder="First number"
+                type = "number"
+                value = {firstNumber}
+                onChange = {(event) => setFirstNumber(event.target.value)}
+                placeholder = "First number"
             />
 
             <Input
-                type="number"
-                value={secondNumber}
-                onChange={(event) => setSecondNumber(event.target.value)}
-                placeholder="Second number"
+                type = "number"
+                value = {secondNumber}
+                onChange = {(event) => setSecondNumber(event.target.value)}
+                placeholder = "Second number"
             />
 
             <div>
-                <CalculatorButton onClick={addition}>
+                <CalculatorButton onClick = {addition}>
                     +
                 </CalculatorButton>
 
-                <CalculatorButton onClick={subtraction}>
+                <CalculatorButton onClick = {subtraction}>
                     -
                 </CalculatorButton>
 
-                <CalculatorButton onClick={multiplication}>
+                <CalculatorButton onClick = {multiplication}>
                     *
                 </CalculatorButton>
 
-                <CalculatorButton onClick={division}>
+                <CalculatorButton onClick = {division}>
                     /
                 </CalculatorButton>
 
-                <CalculatorButton onClick={power}>
+                <CalculatorButton onClick = {power}>
                     **
                 </CalculatorButton>
 
-                <CalculatorButton onClick={clearCalculator}>
+                <CalculatorButton onClick = {clearCalculator}>
                     Clear
                 </CalculatorButton>
             </div>

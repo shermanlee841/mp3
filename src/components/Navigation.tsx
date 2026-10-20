@@ -58,22 +58,22 @@ export default function Navigation() {
         <StyledNav>
             <NavList>
                 <NavItem>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to = "/">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink to="/education">Education</NavLink>
+                    <NavLink to = "/education">Education</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink to="/skills">Skills</NavLink>
+                    <NavLink to = "/skills">Skills</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink to="/experience">Experience</NavLink>
+                    <NavLink to = "/experience">Experience</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink to="/projects">Projects</NavLink>
+                    <NavLink to = "/projects">Projects</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink to="/interests">Interests</NavLink>
+                    <NavLink to = "/interests">Interests</NavLink>
                 </NavItem>
             </NavList>
         </StyledNav>
