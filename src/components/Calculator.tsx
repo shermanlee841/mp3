@@ -87,7 +87,7 @@ export default function Calculator() {
                 </CalculatorButton>
             </div>
 
-            <Output>
+            <Output $negative={typeof output === "number" && output < 0}>
                 <p>{output}</p>
             </Output>
         </CalculatorContainer>
