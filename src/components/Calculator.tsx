@@ -23,8 +23,9 @@ const CalculatorButton = styled.button`
     margin-bottom: 1vh;
 `;
 
-const Output = styled.div`
+const Output = styled.div<{ $negative: boolean }>`
     margin-top: 2vh;
+    color: ${(props) => (props.$negative ? "red" : "black")};
 `;
 
 export default function Calculator() {
